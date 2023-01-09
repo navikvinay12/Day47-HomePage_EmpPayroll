@@ -33,13 +33,12 @@ const save = () =>
 {
     try
     {
-        let employeePayrollData = createEmployeePayroll();  //UC3 Getting all data from from into a single object .
+        let employeePayrollData = createEmployeePayroll();  //UC3 Getting all data from FORM into a single object .
         createAndUpdateStorage(employeePayrollData);  //UC4 emp data Storing into cache
-        // alert("");       //In order to get normal alert without any msg ~ Suraj Sir.
     }catch(e)
     {
-        console.log(e);
-        // return;
+        //console.log(e);
+        return;
     }
 }
 const createEmployeePayroll=()=>
@@ -57,7 +56,7 @@ const createEmployeePayroll=()=>
     employeePayrollData.gender=getSelectedValues('[name=gender]').pop();
     employeePayrollData.department=getSelectedValues('[name=department]');
     employeePayrollData.salary=getInputValueById('#salary');
-    employeePayrollData.note=getInputValueById('#notes');
+    employeePayrollData.note=getInputValueById('#note');
     let date =getInputValueById('#day')+" "+getInputValueById('#month')+" "+getInputValueById('#year');
     employeePayrollData.startDate=new Date(date);
     alert(employeePayrollData.toString());
