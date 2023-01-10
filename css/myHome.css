@@ -12,6 +12,7 @@ html body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    border: 0px solid green;
 }
 .logo-content{
     display: flex;
@@ -45,7 +46,7 @@ html body{
     background: #82a70c 0% 0% no-repeat padding-box;
     border: none;
     border-radius: 5px;
-    padding: 5px 18px;
+    padding: 1px 28px;
     outline: none;
     cursor: pointer;
     text-decoration: none;
@@ -55,7 +56,7 @@ html body{
     flex-direction: column;
     min-height: calc(100vh-80px);
     background-color: #f7f7f7;
-    padding: 30px 0 10px;
+    padding: 10px 0 10px;
     box-sizing: border-box;
 }
 .header-content{
@@ -91,7 +92,7 @@ html body{
 .table{
     width: 100%;
     border-collapse: separate;
-    border-spacing: 0 15px;
+    border-spacing: 0 1px;
     min-width: 800px;
 }
 td,th{

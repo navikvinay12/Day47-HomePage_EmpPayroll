@@ -85,7 +85,7 @@ function createAndUpdateStorage(employeePayrollData) {
     alert(employeePayrollList.toString());
     localStorage.setItem("EmployeePayrollList", JSON.stringify(employeePayrollList))
 }
-// Day46 UC5 Reset the Employee Payroll Filled Form to default .
+// Day46-UC5 Reset the Employee Payroll Filled Form to default .
 const resetForm = () => {
     setValue('#name', '');
     unsetSelectedValues('[name=profile]');
